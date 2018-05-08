@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="navbar-text text-left">
         <p><%= t('hyrax.footer.service_html') %></p>
-        <p><%= t('hyrax.product_name') %> v<%= link_to(Hyrax::VERSION, "https://github.com/RepoCamp/ascteam2/commit/#{ENV['branch']}", target: "_blank") %></p>
+        <p><%= t('hyrax.product_name') %> v<%= link_to(Hyrax::VERSION, "https://github.com/RepoCamp/ascteam2/commit/#{GIT_SHA}", target: "_blank") %></p>
     </div>
     <div class="navbar-right">
       <div class="navbar-text text-right">
