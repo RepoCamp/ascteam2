@@ -1,6 +1,7 @@
 # Advanced Samvera Camp 2018 Team 2 code repo
 
 [![Build Status](https://travis-ci.org/RepoCamp/ascteam2.svg?branch=master)](https://travis-ci.org/RepoCamp/ascteam2)
+[![Coverage Status](https://coveralls.io/repos/github/RepoCamp/ascteam2/badge.svg?branch=add-coveralls-support)](https://coveralls.io/github/RepoCamp/ascteam2?branch=add-coveralls-support)
 
 We encourage particpation from throughout the library and opensource communities.  In order to ensure that everyone can enjoy a safe, welcoming, and resprectful enviornment, please familiarize yourself with the [Samvera Community Code of Condct](https://wiki.duraspace.org/display/samvera/Code+of+Conduct).
 
