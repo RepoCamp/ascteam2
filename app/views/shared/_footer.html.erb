@@ -1,0 +1,20 @@
+<footer class="navbar navbar-inverse site-footer">
+  <div class="container-fluid">
+    <div class="navbar-text text-left">
+        <p><%= t('hyrax.footer.service_html') %></p>
+        <p><%= t('hyrax.product_name') %> v<%= Hyrax::VERSION %></p>
+    </div>
+    <div class="navbar-right">
+      <div class="navbar-text text-right">
+        <p><%= t('hyrax.footer.copyright_html') %></p>
+        <p><%= t('hyrax.background_attribution_html') %></p>
+        <br>TEAM2 Version
+        <br>ENV: <%= Rails.env %>
+        <br>SHA: <%= link_to(GIT_SHA, "https://github.com/RepoCamp/ascteam2/commit/#{GIT_SHA}") %>
+        <br>Branch: <%= BRANCH %>
+        <br>Updated: <%= LAST_DEPLOYED %>
+      </div>
+
+    </div>
+  </div>
+</footer>

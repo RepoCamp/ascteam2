@@ -60,6 +60,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'solr_wrapper', '>= 0.3'
+  gem 'xray-rails'
 end
 
 group :test do
