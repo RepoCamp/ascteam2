@@ -61,3 +61,8 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'solr_wrapper', '>= 0.3'
 end
+
+group :test do
+  gem 'coveralls', require: false
+  gem 'simplecov', require: false
+end
