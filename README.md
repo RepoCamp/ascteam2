@@ -1,4 +1,4 @@
-# Advanced Samvera Camp 2018
+# Advanced Samvera Camp 2018 Team 2 code repo
 
 [![Build Status](https://travis-ci.org/RepoCamp/ascteam2.svg?branch=master)](https://travis-ci.org/RepoCamp/ascteam2)
 
