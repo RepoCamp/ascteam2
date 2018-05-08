@@ -9,6 +9,14 @@ require 'rspec/rails'
 require 'active_fedora/cleaner'
 require 'database_cleaner'
 
+if ENV['COVERAGE'] || ENV['TRAVIS']
+  require 'simplecov'
+  require 'coveralls'
+  
+  SimpleCov.formatter = Coveralls::SimpleCov::Formatter if ENV['TRAVIS']
+  SimpleCov.start 'rails'
+end
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end

@@ -60,3 +60,8 @@ group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
   gem 'rspec-rails'
 end
+
+group :test do
+  gem 'coveralls', require: false
+  gem 'simplecov', require: false
+end
