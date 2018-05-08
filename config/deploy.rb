@@ -2,7 +2,7 @@
 lock "~> 3.10.2"
 
 set :application, "asc2018"
-set :repo_url, "https://github.com/RepoCamp/asc2018.git"
+set :repo_url, "https://github.com/RepoCamp/ascteam2.git"
 
 set :deploy_to, '/opt/asc2018'
 
