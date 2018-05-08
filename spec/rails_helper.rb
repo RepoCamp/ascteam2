@@ -12,7 +12,7 @@ require 'database_cleaner'
 if ENV['COVERAGE'] || ENV['TRAVIS']
   require 'simplecov'
   require 'coveralls'
-  
+
   SimpleCov.formatter = Coveralls::SimpleCov::Formatter if ENV['TRAVIS']
   SimpleCov.start 'rails'
 end
