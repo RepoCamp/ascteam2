@@ -1,4 +1,4 @@
-# Advanced Samvera Camp 2018
+# Advanced Samvera Camp 2018 Team 2 code repo
 
 We encourage particpation from throughout the library and opensource communities.  In order to ensure that everyone can enjoy a safe, welcoming, and resprectful enviornment, please familiarize yourself with the [Samvera Community Code of Condct](https://wiki.duraspace.org/display/samvera/Code+of+Conduct).
 
