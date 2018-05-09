@@ -16,5 +16,9 @@
  */
 
 .site-footer {
-     height: initial;
- }
+  height: initial;
+}
+
+#container {
+  margin-bottom: 400px;
+}
