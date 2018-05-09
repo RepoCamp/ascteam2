@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception, unless: :http_auth_header?
 
   before_action :check_auth_with_http_basic, if: :http_auth_header?
-  
+
   def check_auth_with_http_basic
     authenticate_or_request_with_http_basic do |username, password|
       resource = User.find_by_email(username)
