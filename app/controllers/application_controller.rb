@@ -17,11 +17,9 @@ class ApplicationController < ActionController::Base
   # protect_from_forgery with: :null_session
 
   def check_auth_with_http_basic
-    authenticate_or_request_with_http_basic do |username,password|
+    authenticate_or_request_with_http_basic do |username, password|
       resource = User.find_by_email(username)
-      if resource.valid_password?(password)
-        sign_in :user, resource
-      end
+      sign_in(:user, resource) if resource.valid_password?(password)
     end
   end
 
