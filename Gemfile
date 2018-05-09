@@ -65,6 +65,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'coveralls', require: false
+  gem 'coveralls', '~>0.8.0', require: false
   gem 'simplecov', require: false
 end
