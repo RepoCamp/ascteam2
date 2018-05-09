@@ -58,6 +58,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'database_cleaner'
   gem 'fcrepo_wrapper'
+  gem 'pry'
   gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'solr_wrapper', '>= 0.3'
