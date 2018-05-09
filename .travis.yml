@@ -1,5 +1,6 @@
 language: ruby
-sudo: false
+sudo: required
+
 cache:
   bundler: true
 dist: trusty
@@ -11,15 +12,23 @@ rvm:
 before_install:
   - gem update --system
   - gem install bundler
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  - wget -N http://chromedriver.storage.googleapis.com/2.38/chromedriver_linux64.zip -P ~/
+  - unzip ~/chromedriver_linux64.zip -d ~/
+  - rm ~/chromedriver_linux64.zip
+  - sudo mv -f ~/chromedriver /usr/local/share/
+  - sudo chmod +x /usr/local/share/chromedriver
+  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 before_script:
   - bundle exec rake db:create
   - bundle exec rubocop
 script:
-  - bundle exec rake ci
+  - xvfb-run -a bundle exec rake ci
 addons:
+  chrome: stable
   apt:
     packages:
-     - imagemagick
+      - imagemagick
 services:
   - redis-server
 notifications:

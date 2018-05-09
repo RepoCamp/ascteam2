@@ -17,6 +17,16 @@ if ENV['COVERAGE'] || ENV['TRAVIS']
   SimpleCov.start 'rails'
 end
 
+require 'capybara/rspec'
+require 'capybara/rails'
+require 'selenium-webdriver'
+
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app, browser: :chrome)
+end
+
+Capybara.default_driver = :rack_test # This is a faster driver
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
