@@ -42,5 +42,11 @@ Make sure you have Redis running (in another separate terminal):
 $ bundle exec redis-server
 ```
 
+By default we are using Sidekiq in the development environment for background
+jobs. You'll need to have it running in another tab:
+
+```sh
+sidekiq
+```
 
 At this point, you should be able to browse to `http://localhost:3000`, create a new user and deposit an item.
